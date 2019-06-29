@@ -1,0 +1,43 @@
+@font-face {
+  font-family: LuloClean;
+  src: url(../Fonts/LuloClean.ttf);
+}
+
+@font-face {
+  font-family: Contax;
+  src: url(../Fonts/Contax.otf);
+}
+
+@font-face {
+  font-family: RalewayBold;
+  src: url(../Fonts/Raleway-Bold.ttf);
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Imgs/403.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+  background-color: white;
+}
+
+.title {
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+  font-family: LuloClean;
+  letter-spacing: -1.2vw;
+  line-height: 7vw;
+}
+
+.spaceh {
+  display: block;
+  min-height: 3vw;
+}
+
+.liltext {
+  font-family: RalewayBold;
+  font-size: 3vw;
+  text-align: center;
+  color: white;
+}

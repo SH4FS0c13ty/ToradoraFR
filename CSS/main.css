@@ -1,0 +1,304 @@
+@font-face {
+  font-family: LuloClean;
+  src: url(../Fonts/LuloClean.ttf);
+}
+
+@font-face {
+  font-family: Contax;
+  src: url(../Fonts/Contax.otf);
+}
+
+@font-face {
+  font-family: RalewayBold;
+  src: url(../Fonts/Raleway-Bold.ttf);
+}
+
+#top {
+  display: block;
+  margin-top: -7vw;
+  padding-bottom: 6vw;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.75);
+  z-index: 9;
+}
+
+.menu {
+  margin-left: 10vw;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Imgs/ToradoraC1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: 100% auto;
+  background-color: #EC3642;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-top: 7vw;
+}
+
+.menubutton {
+  background-color: transparent;
+  border: none;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.3vw;
+  margin: 4px 1vw;
+  -webkit-transition-duration: 0.5s;
+  /* Safari */
+  transition-duration: 0.5s;
+  cursor: pointer;
+  border-radius: 2px;
+  color: white;
+  font-family: Contax;
+}
+
+.menubutton:hover {
+  color: #EC3642;
+}
+
+.title {
+  -webkit-transition-duration: 0.5s;
+  /* Safari */
+  transition-duration: 0.5s;
+  font-size: 7vw;
+  color: white;
+  font-family: LuloClean;
+  letter-spacing: -1.2vw;
+  line-height: 7vw;
+}
+
+.spaceh {
+  display: block;
+  min-height: 3vw;
+}
+
+.wikilink {
+  font-size: 2vw;
+}
+
+.link {
+  border: none;
+  font-family: Contax;
+  text-decoration: underline;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button {
+  border: none;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.3vw;
+  margin: 4px 5px;
+  -webkit-transition-duration: 0.5s;
+  /* Safari */
+  transition-duration: 0.5s;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: Contax;
+}
+
+.button1 {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #EC3642;
+}
+
+.button1:hover {
+  background-color: #EC3642;
+  color: white;
+}
+
+.button2 {
+  background-color: #EC3642;
+  color: white;
+  border: 1px solid #EC3642;
+}
+
+.button2:hover {
+  background-color: #9D242C;
+  color: white;
+  border: 1px solid #9D242C;
+}
+
+#about {
+  position: absolute;
+  background-color: #222222;
+  left: 0;
+  right: 0;
+  min-height: 10vw;
+  color: white;
+}
+
+.aboutpic {
+  margin-top: -0.2vw;
+  margin-left: -0.2vw;
+  width: 43vw;
+  height: auto;
+}
+
+.abouttext {
+  margin-left: 3vw;
+  text-align: left;
+  padding-left: 8vw;
+}
+
+.darkliltitle {
+  font-family: RalewayBold;
+  font-size: 1vw;
+  letter-spacing: 0.25vw;
+  color: #666666;
+}
+
+.abouttitle {
+  font-family: LuloClean;
+  font-size: 3vw;
+  letter-spacing: -0.5vw;
+  color: white;
+  line-height: 3.5vw;
+}
+
+.aboutliltext {
+  font-family: Contax;
+  font-size: 1vw;
+  color: white;
+  line-height: 1.5vw;
+}
+
+.olink {
+  font-size: 1vw;
+}
+
+.artlink {
+  font-size: 1vw;
+  text-align: center;
+}
+
+#downloads {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../Imgs/ToradoraC2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  margin-top: 40vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-height: 10vw;
+  color: white;
+  z-index: 2;
+}
+
+.dltitle {
+  font-family: LuloClean;
+  font-size: 3vw;
+  text-align: center;
+  letter-spacing: -0.25vw;
+}
+
+.dltext {
+  font-family: Contax;
+  font-size: 1.4vw;
+  color: white;
+  text-align: center;
+}
+
+.dltable {
+  padding-right: 20%;
+  padding-left: 20%;
+  text-align: center;
+}
+
+.trdl {
+  height: 10vw;
+}
+
+.tddl {
+  width: 30vw;
+}
+
+.dllink {
+  font-size: 1.5vw;
+}
+
+#contact {
+  background-color: #222222;
+  margin-top: 92vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-height: 10vw;
+  color: white;
+  z-index: 2;
+}
+
+.contactbanner {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacttable {
+  padding-right: 25%;
+  padding-left: 27%;
+  text-align: center;
+}
+
+.trcontact {
+  height: 10vw;
+}
+
+.tdcontact {
+  text-align: left;
+  width: 23vw;
+  float: left;
+}
+
+.contactpic {
+  float: right;
+  width: 20vw;
+}
+
+.contacttitle {
+  font-family: LuloClean;
+  font-size: 2vw;
+  letter-spacing: -0.15vw;
+}
+
+.contactliltitle {
+  font-family: RalewayBold;
+  font-size: 1.5vw;
+}
+
+.contactliltext {
+  font-family: Contax;
+  font-size: 1.2vw;
+}
+
+.footer {
+  position: absolute;
+  margin-top: 132vw;
+  background-color: #EC3642;
+  height: 2vw;
+  right: 0;
+  left: 0;
+  font-size: 1vw;
+  text-align: center;
+  font-family: Contax;
+  color: white;
+  padding-top: 0.8vw;
+  z-index: 3;
+}
