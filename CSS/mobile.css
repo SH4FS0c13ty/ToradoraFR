@@ -13,10 +13,6 @@
   src: url(/Fonts/Raleway-Bold.ttf);
 }
 
-#mobilemenuwrapper {
-    display: none;
-}
-
 #top {
   display: block;
   margin-top: -7vw;
@@ -27,13 +23,66 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
+  height: 15vw;
   background-color: rgba(50, 50, 50, 0.75);
   z-index: 9;
 }
 
 .menu {
   margin-left: 10vw;
+  display: none;
+}
+
+.mobilemenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #202124;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.mobilemenu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.mobilemenu a:hover {
+  color: #f1f1f1;
+}
+
+.mobilemenu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 2vw;
+  font-size: 15vw;
+  margin-left: 50px;
+  size: 15vw 15vw;
+}
+
+.openmenu {
+  line-height: 15vw;
+  color: white;
+  margin-left: 2vw;
+  font-size: 10vw;
+  cursor: pointer;
+}
+
+.bars {
+  margin-top: 1vw;
+  padding-right: 10px;
+  width: 8vw;
+  height: 8vw;
+  cursor: pointer;
 }
 
 body {
@@ -41,11 +90,27 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
-  background-size: 100% auto;
+  background-size: auto 100vh;
   background-color: #EC3642;
   padding-left: 10vw;
   padding-right: 10vw;
   margin-top: 7vw;
+}
+
+.topbutton {
+  background-color: transparent;
+  border: none;
+  margin-left: 10vw;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10vw;
+  -webkit-transition-duration: 0.5s;
+  /* Safari */
+  transition-duration: 0.5s;
+  cursor: pointer;
+  border-radius: 2px;
+  color: white;
+  font-family: Contax;
 }
 
 .menubutton {
@@ -55,7 +120,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.3vw;
+  font-size: 8vw;
   margin: 4px 1vw;
   -webkit-transition-duration: 0.5s;
   /* Safari */
@@ -74,11 +139,12 @@ body {
   -webkit-transition-duration: 0.5s;
   /* Safari */
   transition-duration: 0.5s;
-  font-size: 7vw;
+  font-size: 11vw;
   color: white;
   font-family: LuloClean;
-  letter-spacing: -1.2vw;
-  line-height: 7vw;
+  letter-spacing: -2.5vw;
+  line-height: 15vw;
+  margin-top: 20vw;
 }
 
 .spaceh {
@@ -87,7 +153,7 @@ body {
 }
 
 .wikilink {
-  font-size: 2vw;
+  font-size: 8vw;
 }
 
 .link {
@@ -105,8 +171,8 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.3vw;
-  margin: 4px 5px;
+  font-size: 8vw;
+  margin: 1vw 1vw;
   -webkit-transition-duration: 0.5s;
   /* Safari */
   transition-duration: 0.5s;
@@ -116,9 +182,10 @@ body {
 }
 
 .button1 {
+  width: 100%;
   background-color: transparent;
   color: white;
-  border: 1px solid #EC3642;
+  border: 1vw solid #EC3642;
 }
 
 .button1:hover {
@@ -127,9 +194,10 @@ body {
 }
 
 .button2 {
+  width: 100%;
   background-color: #EC3642;
   color: white;
-  border: 1px solid #EC3642;
+  border: 1vw solid #EC3642;
 }
 
 .button2:hover {
@@ -140,57 +208,65 @@ body {
 
 #about {
   position: absolute;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/Imgs/R&T.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
   background-color: #222222;
   left: 0;
   right: 0;
-  min-height: 10vw;
+  height: 105vh;
   color: white;
 }
 
 .aboutpic {
+  display: none;
   margin-top: -0.2vw;
   margin-left: -0.2vw;
-  width: 43vw;
-  height: auto;
+  width: 0vw;
+  height: 0vw;
 }
 
 .abouttext {
   margin-left: 3vw;
   text-align: left;
   padding-left: 8vw;
+  padding-top: 3vw;
 }
 
 .darkliltitle {
   font-family: RalewayBold;
-  font-size: 1vw;
+  font-size: 2.5vh;
   letter-spacing: 0.25vw;
   color: #666666;
+  line-height: 5vh;
 }
 
 .abouttitle {
   font-family: LuloClean;
-  font-size: 3vw;
-  letter-spacing: -0.5vw;
+  font-size: 8vw;
+  letter-spacing: -1.2vw;
   color: white;
-  line-height: 3.5vw;
+  line-height: 3.5vh;
 }
 
 .aboutliltext {
   font-family: Contax;
-  font-size: 1vw;
+  font-size: 5vw;
   color: white;
-  line-height: 1.5vw;
+  line-height: 2.5vh;
 }
 
-.abouttxtmob{
+.abouttxtcomp{
   display: none;
 }
 
 .olink {
-  font-size: 1vw;
+  font-size: 2vh;
 }
 
 .artlink {
+  width: 85%;
   text-align: center;
 }
 
@@ -198,8 +274,8 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("/Imgs/ToradoraC2.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% auto;
-  margin-top: 40vw;
+  background-size: auto 100%;
+  margin-top: 102vh;
   position: absolute;
   left: 0;
   right: 0;
@@ -210,26 +286,27 @@ body {
 
 .dltitle {
   font-family: LuloClean;
-  font-size: 3vw;
+  font-size: 7.5vw;
   text-align: center;
-  letter-spacing: -0.25vw;
+  letter-spacing: -1.2vw;
 }
 
 .dltext {
   font-family: Contax;
-  font-size: 1.4vw;
+  font-size: 5vw;
   color: white;
   text-align: center;
+  line-height: 3vh;
 }
 
 .dltable {
-  padding-right: 20%;
-  padding-left: 20%;
+  margin-top: 3vh;
+  margin-left: 3%; 
   text-align: center;
 }
 
 .trdl {
-  height: 10vw;
+  height: 15vh;
 }
 
 .tddl {
@@ -237,72 +314,71 @@ body {
 }
 
 .dllink {
-  font-size: 1.5vw;
+  font-size: 5vw;
 }
 
 #contact {
   background-color: #222222;
-  margin-top: 92vw;
+  margin-top: 190vh;
   position: absolute;
   left: 0;
   right: 0;
-  min-height: 15vw;
+  min-height: 73vh;
   color: white;
   z-index: 2;
 }
 
 .contactbanner {
   display: block;
-  width: 50%;
+  width: 90vw;
   margin-left: auto;
   margin-right: auto;
 }
 
 .contacttable {
-  padding-right: 25%;
-  padding-left: 27%;
+  padding-left: 7%;
   text-align: center;
 }
 
 .trcontact {
-  height: 10vw;
+  height: 10vh;
 }
 
 .tdcontact {
   text-align: left;
-  width: 23vw;
+  width: 80vw;
   float: left;
 }
 
 .contactpic {
-  float: right;
-  width: 20vw;
+  display: none;
+  width: 0vw;
 }
 
 .contacttitle {
   font-family: LuloClean;
-  font-size: 2vw;
-  letter-spacing: -0.15vw;
+  font-size: 8vw;
+  letter-spacing: -1.2vw;
 }
 
 .contactliltitle {
   font-family: RalewayBold;
-  font-size: 1.5vw;
+  font-size: 5vw;
 }
 
 .contactliltext {
   font-family: Contax;
-  font-size: 1.2vw;
+  font-size: 5vw;
 }
 
 .footer {
   position: absolute;
-  margin-top: 132vw;
+  margin-top: 263vh;
   background-color: #EC3642;
-  height: 2vw;
+  height: 7vh;
   right: 0;
   left: 0;
-  font-size: 1vw;
+  font-size: 4vw;
   text-align: center;
   font-family: Contax;
   color: white;

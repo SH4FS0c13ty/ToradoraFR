@@ -17,27 +17,27 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/Imgs/403.jpg");
   background-attachment: fixed;
   background-position: top;
-  background-size: cover;
+  background-size: auto 100vh;
   background-color: white;
 }
 
 .title {
   text-align: center;
-  font-size: 5vw;
+  font-size: 10vw;
   color: white;
   font-family: LuloClean;
-  letter-spacing: -1.2vw;
-  line-height: 7vw;
+  letter-spacing: -1.8vw;
+  line-height: 15vw;
 }
 
 .spaceh {
   display: block;
-  min-height: 3vw;
+  min-height: 5vw;
 }
 
 .liltext {
   font-family: RalewayBold;
-  font-size: 3vw;
+  font-size: 4.5vw;
   text-align: center;
   color: white;
 }

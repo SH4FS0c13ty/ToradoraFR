@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <title>Toradora! Portable FR - Erreur 404</title>
   <link rel="icon" type="image/png" href="Imgs/Favicon.png" />
-  <link rel="stylesheet" href="CSS/404.css" type="text/css">
-  <script>
-    $(document).ready(function() {
-      $('body').find('img[src$="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]').parent().closest('a').closest('div').remove();
-    });
+  <link rel="stylesheet" id="stylesheet" href="CSS/404.css" type="text/css">
+  <script type="text/javascript">
+    if (screen.width <= 699) {
+      document.getElementById('stylesheet').href='/CSS/404-mobile.css';
+    }
   </script>
 </head>
 
@@ -22,7 +22,7 @@
   <div class="spaceh"></div>
   <div class="liltext">
     Le projet Toradora! Portable FR n'étant pas terminé,<br>
-    la version FR n'est pas encore publiée.
+    l'ISO FR n'est pas encore publiée.
   </div>
 </body>
 

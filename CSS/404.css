@@ -1,20 +1,20 @@
 @font-face {
   font-family: LuloClean;
-  src: url(../Fonts/LuloClean.ttf);
+  src: url(/Fonts/LuloClean.ttf);
 }
 
 @font-face {
   font-family: Contax;
-  src: url(../Fonts/Contax.otf);
+  src: url(/Fonts/Contax.otf);
 }
 
 @font-face {
   font-family: RalewayBold;
-  src: url(../Fonts/Raleway-Bold.ttf);
+  src: url(/Fonts/Raleway-Bold.ttf);
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../Imgs/404.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/Imgs/404.jpg");
   background-attachment: fixed;
   background-position: top;
   background-size: cover;

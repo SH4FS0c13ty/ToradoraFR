@@ -4,26 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <title>Toradora! Portable FR</title>
-  <link rel="icon" type="image/png" href="Imgs/Favicon.png" />
-  <script type="text/javascript" src="JS/jquery-3.3.1-min.js"></script>
-  <script type="text/javascript" src="JS/scroll.js"></script>
-  <link rel="stylesheet" href="CSS/main.css" type="text/css">
+  <link rel="icon" type="image/png" href="/Imgs/Favicon.png" />
+  <script type="text/javascript" src="/JS/jquery-3.3.1-min.js"></script>
+  <script type="text/javascript" src="/JS/scroll.js"></script>
+  <link rel="stylesheet" id="stylesheet" href="CSS/main.css" type="text/css">
+  <script type="text/javascript">
+    if (screen.width <= 499) {
+      document.getElementById('stylesheet').href='CSS/mobile.css';
+      document.getElementByClassName('menu').style.display='none';
+    }
+  </script>
   <script>
-    $(document).ready(function() {
-      $('body').find('img[src$="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]').parent().closest('a').closest('div').remove();
-    });
+    function openNav() {
+      document.getElementById("lmenu").style.width = "75vw";
+    }
+
+    function closeNav() {
+      document.getElementById("lmenu").style.width = "0";
+    }
   </script>
 </head>
 
 <body>
   <span id="top"></span>
   <header>
-    <div class="menu">
+    <div id="topmenu" class="menu">
       <a class="buttonlink" href="#top"><button class="menubutton">Accueil</button></a>
       <a class="buttonlink" href="#about"><button class="menubutton">A propos</button></a>
       <a class="buttonlink" href="#downloads"><button class="menubutton">Téléchargement</button></a>
       <a class="buttonlink" href="#contact"><button class="menubutton">Contact</button></a>
     </div>
+    <div id="mobilemenuwrapper">
+      <div class="openmenu" onclick="openNav()">
+        <a class="buttonlink"><img src="/Imgs/Menu.png" class="bars"><button class="topbutton">Toradora FR</button></a>
+      </div>
+      <div id="lmenu" class="mobilemenu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="buttonlink" href="#top"><button class="menubutton">Accueil</button></a>
+        <a class="buttonlink" href="#about"><button class="menubutton">A propos</button></a>
+        <a class="buttonlink" href="#downloads"><button class="menubutton">Téléchargement</button></a>
+        <a class="buttonlink" href="#contact"><button class="menubutton">Contact</button></a>
+      </div>
+    </div>
+
   </header>
 
 
@@ -54,39 +77,39 @@
     <table>
       <tr>
         <td>
-          <img src="Imgs/R&T.jpg" class="aboutpic">
+          <img src="/Imgs/R&T.jpg" class="aboutpic">
         </td>
         <td>
           <div class="abouttext">
             <span class="darkliltitle">A PROPOS</span>
             <br>
             <span class="abouttitle">PROJET<br>TORADORA FR</span>
-            <br><br>
+            <br><br><br class="abouttxtmob">
 
             <div class="aboutliltext">
               <form>
-                Le projet Toradora FR est née d'une envie soudaine après<br>
-                avoir fini le jeu en anglais. Ayant regardé l'anime en<br>
-                VOSTFR, j'étais déçu de ne voir qu'un portage en anglais<br>
-                (ce qui est déjà bien pour un jeu PSP sorti uniquement au<br>
-                Japon). C'est donc 10 ans après la sortie du jeu Toradora!<br>
-                Portable que j'ai décidé d'en faire la traduction à l'aide<br>
-                d'un ami (
+                Le projet Toradora FR est née<br class="abouttxtmob"> d'une envie soudaine après<br class="abouttxtmob"><br class="abouttxtcomp">
+                avoir fini le jeu en anglais. <br class="abouttxtmob">Ayant regardé l'anime en<br class="abouttxtmob"><br class="abouttxtcomp">
+                VOSTFR, j'étais déçu de ne <br class="abouttxtmob">voir qu'un portage en anglais<br class="abouttxtmob"><br class="abouttxtcomp">
+                (ce qui est déjà bien pour un <br class="abouttxtmob">jeu PSP sorti uniquement au<br class="abouttxtmob"><br class="abouttxtcomp">
+                Japon). C'est donc 10 ans <br class="abouttxtmob">après la sortie du jeu Toradora!<br class="abouttxtmob"><br class="abouttxtcomp">
+                Portable que j'ai décidé d'en <br class="abouttxtmob">faire la traduction à l'aide<br class="abouttxtcomp">
+                d'un <br class="abouttxtmob">ami (
 
                 <button class="link olink" type="submit" formaction="http://123321mario.tk/" formtarget="_blank">@123321mario</button>
 
-                ) et de son équipe de traducteurs.<br>
-                On s'est débrouillé à chercher et trouver des solutions<br>
-                avec notre petite équipe pour enfin sortir la traduction de<br>
+                ) et de son <br class="abouttxtmob">équipe de traducteurs.<br class="abouttxtcomp">
+                On <br class="abouttxtmob">s'est débrouillé à chercher et <br class="abouttxtmob">trouver des solutions<br class="abouttxtcomp">
+                avec <br class="abouttxtmob">notre petite équipe pour <br class="abouttxtmob">enfin sortir la traduction de<br class="abouttxtmob"><br class="abouttxtcomp">
                 ce jeu que j'aime tant.
               </form>
 
               <br><br>
-              Si vous voulez des artworks du jeu, ils sont disponibles<br>
+              Si vous voulez des artworks <br class="abouttxtmob">du jeu, ils sont disponibles<br class="abouttxtmob"><br class="abouttxtcomp">
               en téléchargement ici:
               <br><br>
               <form>
-                <button class="button button1" type="submit" formaction="https://www.dropbox.com/sh/5j4u78uv4boz822/AACs9HshE-vX_B2i1mwKGN7Ma?dl=0" formtarget="_blank">Toradora! Portable PSP Artworks</button>
+                <button class="button button1 artlink" type="submit" formaction="https://www.dropbox.com/sh/5j4u78uv4boz822/AACs9HshE-vX_B2i1mwKGN7Ma?dl=0" formtarget="_blank">Toradora! Portable PSP Artworks</button>
               </form>
 
             </div>
@@ -102,11 +125,11 @@
     <div class="dltitle">TÉLÉCHARGEMENTS</div>
     <div class="spaceh"></div>
     <div class="dltext">
-      Bienvenue dans la section Téléchargements.<br>
-      Vous retrouverez ici les ISO dans les 3 différentes langues<br>
-      (Japonais [JP], Anglais [EN] et Français [FR]).<br>
-      Vous retrouverez de plus tous les éléments ayant servis à la<br>
-      traduction: le kit de traduction, les fichiers de dialogues et<br>
+      Bienvenue dans la <br class="abouttxtmob">section Téléchargements.<br class="abouttxtmob"><br class="abouttxtmob"><br class="abouttxtcomp">
+      Vous retrouverez ici les ISO <br class="abouttxtmob">dans les 3 différentes langues<br class="abouttxtmob"><br class="abouttxtcomp">
+      (Japonais [JP], Anglais [EN] <br class="abouttxtmob">et Français [FR]).<br class="abouttxtmob"><br class="abouttxtmob"><br class="abouttxtcomp">
+      Vous retrouverez de plus tous <br class="abouttxtmob">les éléments ayant servis à la<br class="abouttxtmob"><br class="abouttxtcomp">
+      traduction: le kit de traduction, <br class="abouttxtmob">les fichiers de dialogues et<br class="abouttxtmob"><br class="abouttxtcomp">
       l'émulateur PPSSPP.
     </div>
     <div class="spaceh"></div>
@@ -124,7 +147,7 @@
         </td>
         <td class="tddl">
           <form>
-            <button class="link dllink" type="submit" formaction="404.html" formtarget="_blank">Toradora! Portable<br>ISO [FR]</button>
+            <button class="link dllink" type="submit" formaction="/404.html" formtarget="_blank">Toradora! Portable<br>ISO [FR]</button>
           </form>
         </td>
       </tr>
@@ -148,11 +171,14 @@
     </table>
     <div class="spaceh"></div>
     <div class="spaceh"></div>
+    <br class="abouttxtmob">
   </div>
 
   <div id="contact">
+    <br class="abouttxtmob">
+    <br class="abouttxtmob">
     <div class="spaceh"></div>
-    <img src="Imgs/ToradoraBanner.png" class="contactbanner">
+    <img src="/Imgs/ToradoraBanner.png" class="contactbanner">
     <div class="spaceh"></div>
     <table class="contacttable">
       <tr class="trcontact">
@@ -166,7 +192,7 @@
               Twitter :
               <button class="link olink" type="submit" formaction="https://twitter.com/SH4FS0c13ty" formtarget="_blank">@SH4FS0c13ty</button>
               <br>
-              Discord : Le Panda Roux#1562
+              Discord : SH4FS0c13ty#1562
               <br>
               Github :
               <button class="link olink" type="submit" formaction="https://github.com/SH4FS0c13ty" formtarget="_blank">@SH4FS0c13ty</button>
@@ -184,22 +210,19 @@
           </div>
         </td>
         <td class="tdcontact">
-          <img src="Imgs/T&R.jpg" class="contactpic">
+          <img src="/Imgs/TaigaDonut.jpg" class="contactpic">
         </td>
       </tr>
     </table>
     <div class="spaceh"></div>
     <div class="spaceh"></div>
   </div>
-
+  <div class="spacefooter"></div>
   <div class="footer">
     <form>
-      Copyright © 2019 SH4FS0c13ty - Projet Toradora! FR -
+      Copyright © 2019 SH4FS0c13ty -<br class="abouttxtmob"> Projet Toradora! FR -
       <button class="link olink" type="submit" formaction="license.txt" formtarget="_blank">MIT License</button>
     </form>
   </div>
-
-
 </body>
-
 </html>
